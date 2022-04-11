@@ -1,0 +1,23 @@
+{
+  "name": "nft-proof-of-signature",
+  "version": "1.0.0",
+  "description": "metadata api for wallid tsp",
+  "main": "run.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walliDprotocol/NFT-Proof-of-Signature.git"
+  },
+  "author": "vitor viana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walliDprotocol/NFT-Proof-of-Signature/issues"
+  },
+  "homepage": "https://github.com/walliDprotocol/NFT-Proof-of-Signature#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3"
+  }
+}
