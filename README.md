@@ -43,7 +43,7 @@ WalliD ETH signatures is an integration built by WalliD on top of DocuSign, Poly
 - WalliD and DocuSign's backend integration complete and tested. See demo video [here](https://www.youtube.com/watch?v=s6OsDNNHcqc)
 - ERC-1155 smart contract deployed on Mumbay testnet. Check smart contract [here](https://mumbai.polygonscan.com/address/0x43Cceb10D3a3E3941e2466E4c513ea6Cc34285AD#readContract)
 - OpeanSea collection with for Proof-of-signature NFTs created. see collection [here](https://testnets.opensea.io/collection/signed-document-info-v2)
-- Areweave integration to store original signed files complete. See permaweb link [here](https://p3rqjvuflaxw5iukteor4qf2tl7vfi65oxpfr3lzfrd4kdyi.arweave.net/fuME1oVYL26_iipk_d-HkC6mv9So9113ljteSxHxQ8I)
+- Areweave integration to store original signed files complete. See permaweb link [here](https://arweave.net/zTusWTpK0cfn5AKGO85PDlwvBuEZKqMic9gijTBLVmM)
 
 
 ## What's next?
