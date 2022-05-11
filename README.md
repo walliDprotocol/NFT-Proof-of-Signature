@@ -15,7 +15,7 @@ WalliD ETH signatures is an integration built by WalliD on top of DocuSign, Poly
 
 
 ### What's open-source?
- - WalliD Wallet
+ - [MyWalliD Wallet](https://github.com/walliDprotocol/MyWalliD-Wallet)
  - Proof-of-Signature Smart contract
 
 ### What's not open-source?
