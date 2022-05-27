@@ -37,7 +37,7 @@ WalliD ETH signatures is a service built by WalliD on top of DocuSign, Polygon a
     - hash: cryptographic proof-of-signature generated on DocuSign's backend;
     - signers' wallet addresses: Extracted from MyWalliD wallet during the signing event;
 7. Original document holders can verify the signatures embedded in PDF.
-8. Anyone can verify the public signatures minted as NFTs on-chain or in NFT marketplaces such as OpenSea under [WalliD's collection](https://testnets.opensea.io/collection/wallid-pos-ntfs)
+8. Anyone can verify the public signatures minted as NFTs on-chain or in NFT marketplaces such as OpenSea under [WalliD's collection](https://testnets.opensea.io/collection/wallid-pos-ntfs](https://testnets.opensea.io/collection/wallid-proof-of-signature-nfts))
 
 ### Document Signature and NFT minting flow:
 
