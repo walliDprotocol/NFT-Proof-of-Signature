@@ -46,15 +46,17 @@ WalliD ETH signatures is a service built by WalliD on top of DocuSign, Polygon a
 
 ## What's the status of the project?
 - WalliD and DocuSign's backend integration complete and tested. See demo video [here](https://www.youtube.com/watch?v=s6OsDNNHcqc)
-- ERC-1155 smart contract deployed on Mumbaoi testnet. Check smart contract [here](https://mumbai.polygonscan.com/address/0x1B58E3347E5cC1F5A787f3A719bC042ef17d7324))
-- OpeanSea collection with for Proof-of-signature NFTs created. see collection [here](https://testnets.opensea.io/collection/wallid-pos-ntfs)
+- ERC-1155 smart contract deployed on Mumbai testnet. Check smart contract [here](https://mumbai.polygonscan.com/address/0x1B58E3347E5cC1F5A787f3A719bC042ef17d7324))
+- ERC-1155 smart contract deployed on Polygon Mainnet. Check smart contract [here] (https://polygonscan.com/address/0x2b1ba46aDAbBE597dbe7525857afCC6fB4Ea1d46)
+- testnet OpeanSea collection with for Proof-of-signature NFTs created. see collection [here](https://testnets.opensea.io/collection/wallid-pos-ntfs)
+- Mainnet OpeanSea collection with for Proof-of-signature NFTs coming soon.
 - Areweave integration to store original signed files complete. See an example of a signed document stored permanetly [here](https://arweave.net/zTusWTpK0cfn5AKGO85PDlwvBuEZKqMic9gijTBLVmM)
 
 
 ## What's next?
 - Launching the private beta and onboard first 100 users
 - Audit Proof-of-signature smart contract
-- Launch on Mainnet and open to Public Beta
+
 
 
 
