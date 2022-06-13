@@ -1,13 +1,14 @@
-
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 
+import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 
 contract SimpleAccessControl {
 
     mapping (address => uint8) internal _owners;
 
     modifier isOwner() {
-        require(_owners[msg.sender] > 0, "ERR_NOT_OWNER");
+        require(_owners[msg.sender] == 10, "ERR_NOT_OWNER");
         _;
     }
     
@@ -30,7 +31,7 @@ contract SimpleAccessControl {
     }
 }
 
-contract eSignDocsCollection  is ERC1155, SimpleAccessControl 
+contract WalliDProofOfSignatureNFTs  is ERC1155, SimpleAccessControl 
 {
     
     uint256 private _id = 1;
@@ -49,10 +50,10 @@ contract eSignDocsCollection  is ERC1155, SimpleAccessControl
         uint256 nftId;
     }
 
-    constructor() public ERC1155("https://demo.api.wallid.io/api/v1/metadata/detail/{id}")
+    constructor() ERC1155("https://api.wallid.io/api/v1/metadata/detail/{id}")
     {
-        _contractURI = "https://demo.api.wallid.io/api/v1/metadata/";
-        name = "WalliD PoS NTFs";
+        _contractURI = "https://api.wallid.io/api/v1/metadata/";
+        name = "WalliD PoS NFTs";
     }
 
     function lastIndex() public view returns (uint256) {
@@ -65,10 +66,10 @@ contract eSignDocsCollection  is ERC1155, SimpleAccessControl
     }
 
      // get nft info based on document hash
-     function getSignersInfo (bytes memory docHash ) public view returns (address[] memory, bytes memory, bytes memory) 
+     function getSignersInfo (bytes memory docHash ) public view returns (address[] memory, bytes memory, bytes memory, uint256 ) 
      {
-        uint256 _id = _hashDocToNftId[docHash];
-        return (_idsToDocument[_id].signers, _idsToDocument[_id].envelopeId, _idsToDocument[_id].documentHash);    
+        uint256 id = _hashDocToNftId[docHash];
+        return (_idsToDocument[id].signers, _idsToDocument[id].envelopeId, _idsToDocument[id].documentHash, id);    
      }
 
     function mintDocument( address[] memory signers, bytes memory envelopeId, bytes memory docHash   ) public isOwner  returns (uint256) 
