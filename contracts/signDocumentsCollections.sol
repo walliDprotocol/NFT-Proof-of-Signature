@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.7;
+pragma solidity 0.8.10;
 
 import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 
@@ -25,9 +25,9 @@ contract SimpleAccessControl {
        _owners[newOwner] = 10;
     }
     
-    function removeOwnership(address payable newOwner) public isOwner {
-        require(newOwner != address(0), "ERR_ZERO_ADDR");
-       _owners[newOwner] = 0;
+    function removeOwnership(address payable existingOwner) public isOwner {
+        require(_owners[existingOwner] == 10, "ERR_ADDR_NOT_OWNER");
+       _owners[existingOwner] = 0;
     }
 }
 
@@ -65,7 +65,7 @@ contract WalliDProofOfSignatureNFTs  is ERC1155, SimpleAccessControl
         return (_idsToDocument[id].signers, _idsToDocument[id].envelopeId, _idsToDocument[id].documentHash);    
     }
 
-     // get nft info based on document hash
+     // get nft info based on document has
      function getSignersInfo (bytes memory docHash ) public view returns (address[] memory, bytes memory, bytes memory, uint256 ) 
      {
         uint256 id = _hashDocToNftId[docHash];
@@ -85,6 +85,7 @@ contract WalliDProofOfSignatureNFTs  is ERC1155, SimpleAccessControl
      
         for (uint i = 0; i<signers.length; i++) 
         {
+            require(signers[i] != address(0), "ERR_ZERO_ADDR");
             _mint(signers[i], _id, 1, "");
         }
 
