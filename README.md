@@ -54,7 +54,7 @@ WalliD ETH signatures is a service built by WalliD on top of DocuSign, Polygon a
 - Areweave integration to store original signed files complete. See an example of a signed document stored permanetly [here](https://arweave.net/zTusWTpK0cfn5AKGO85PDlwvBuEZKqMic9gijTBLVmM)
 
 
-## [Apply]((https://docs.google.com/forms/d/e/1FAIpQLSdcVRWKXp66JeEoyHCewhiND_v_H4bmWE5oAGdVkvoh7Zpz_w/viewform) for Private Beta and try it our for yoursel:
+## [Apply](https://docs.google.com/forms/d/e/1FAIpQLSdcVRWKXp66JeEoyHCewhiND_v_H4bmWE5oAGdVkvoh7Zpz_w/viewform) for Private Beta and try it our for yourself
 
 
 
